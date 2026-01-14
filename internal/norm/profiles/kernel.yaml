@@ -1,0 +1,11 @@
+version: 1
+description: "Kernel/syslog profile"
+rules:
+  - name: ts
+    type: regex
+    pattern: '\b[A-Z][a-z]{2} \d{1,2} \d{2}:\d{2}:\d{2}\b'
+    replace: '<ts>'
+  - name: pid
+    type: regex
+    pattern: '\[\d+\]'
+    replace: '[<pid>]'

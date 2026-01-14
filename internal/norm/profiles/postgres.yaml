@@ -1,0 +1,27 @@
+version: 1
+description: "PostgreSQL log profile"
+rules:
+  - name: ts
+    type: regex
+    pattern: '\b\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} [A-Z]{2,4}\b'
+    replace: '<ts>'
+  - name: pid
+    type: regex
+    pattern: '\[\d+\]'
+    replace: '[<pid>]'
+  - name: duration
+    type: regex
+    pattern: '\bduration: \d+(?:\.\d+)? ms\b'
+    replace: 'duration: <ms> ms'
+  - name: session
+    type: regex
+    pattern: '\b[0-9a-f]{8}\.[0-9a-f]+\b'
+    replace: '<sess>'
+  - name: sqlstate
+    type: regex
+    pattern: '\b(?:[0-9]{2}[A-Z][0-9A-Z]{2}|[0-9]{2}[0-9][A-Z][0-9A-Z]|[0-9]{2}[0-9]{2}[A-Z])\b'
+    replace: '<sqlstate>'
+  - name: statement
+    type: regex
+    pattern: '\bstatement: .*'
+    replace: 'statement: <stmt>'
