@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"aip/internal/cluster"
+	"github.com/yjhatfdu/aip/internal/cluster"
 )
 
 func TestClusterCommandJSONL(t *testing.T) {

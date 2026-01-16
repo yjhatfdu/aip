@@ -3,8 +3,8 @@ package cmd
 import (
 	"fmt"
 
-	"aip/internal/i18n"
 	"github.com/spf13/cobra"
+	"github.com/yjhatfdu/aip/internal/i18n"
 )
 
 func newStubCommand(lang i18n.Lang, name, shortKey string) *cobra.Command {

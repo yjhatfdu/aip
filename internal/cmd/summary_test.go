@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"aip/internal/llm"
+	"github.com/yjhatfdu/aip/internal/llm"
 )
 
 func TestSummaryCommandText(t *testing.T) {

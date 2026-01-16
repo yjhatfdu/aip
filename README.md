@@ -10,6 +10,12 @@ Build from source:
 go build ./cmd/aip
 ```
 
+Install with Go:
+
+```sh
+go install github.com/yjhatfdu/aip/cmd/aip@latest
+```
+
 Or build cross-platform artifacts:
 
 ```sh
@@ -91,5 +97,4 @@ Quickly scan one sample per cluster:
 ```sh
 cat norm.jsonl | aip cluster --format sample
 ```
-
 

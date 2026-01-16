@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"aip/internal/cmd"
+	"github.com/yjhatfdu/aip/internal/cmd"
 )
 
 func main() {

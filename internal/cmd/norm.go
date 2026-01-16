@@ -9,9 +9,9 @@ import (
 	"os"
 	"strings"
 
-	"aip/internal/i18n"
-	"aip/internal/norm"
 	"github.com/spf13/cobra"
+	"github.com/yjhatfdu/aip/internal/i18n"
+	"github.com/yjhatfdu/aip/internal/norm"
 )
 
 func newNormCommand(lang i18n.Lang) *cobra.Command {

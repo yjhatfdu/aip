@@ -9,11 +9,11 @@ import (
 	"os"
 	"time"
 
-	"aip/internal/config"
-	"aip/internal/i18n"
-	"aip/internal/llm"
-	"aip/internal/summary"
 	"github.com/spf13/cobra"
+	"github.com/yjhatfdu/aip/internal/config"
+	"github.com/yjhatfdu/aip/internal/i18n"
+	"github.com/yjhatfdu/aip/internal/llm"
+	"github.com/yjhatfdu/aip/internal/summary"
 )
 
 type summaryResult struct {

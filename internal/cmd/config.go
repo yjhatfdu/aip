@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"aip/internal/config"
-	"aip/internal/i18n"
 	"github.com/spf13/cobra"
+	"github.com/yjhatfdu/aip/internal/config"
+	"github.com/yjhatfdu/aip/internal/i18n"
 )
 
 func newConfigCommand(lang i18n.Lang) *cobra.Command {

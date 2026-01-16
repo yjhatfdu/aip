@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"runtime"
 
-	"aip/internal/i18n"
-	"aip/internal/version"
 	"github.com/spf13/cobra"
+	"github.com/yjhatfdu/aip/internal/i18n"
+	"github.com/yjhatfdu/aip/internal/version"
 )
 
 func newVersionCommand(lang i18n.Lang) *cobra.Command {

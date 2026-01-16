@@ -1,4 +1,4 @@
-module aip
+module github.com/yjhatfdu/aip
 
 go 1.22
 
